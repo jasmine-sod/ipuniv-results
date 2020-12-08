@@ -1,0 +1,47 @@
+
+@keyframes placeHolderShimmer{
+    0%{
+        background-position: -468px 0
+    }
+    100%{
+        background-position: 468px 0
+    }
+}
+.background-masker {
+	animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+	animation-timing-function: linear;
+	background: #22313a; 
+	background: linear-gradient(to right, #22313a 8%, #303d49 18%, #22313a 33%);
+    position: absolute; 
+}
+/* Every thing below this is just positioning */
+
+.background-masker.header-1,
+.background-masker.header-2,
+.background-masker.header-3,
+.background-masker.header-4{
+    top: 20px;
+    left: 80px;
+    right: 20px;
+    height: 10px;
+}
+.background-masker.tr-data{
+    /* top: 20px; */
+    /* left: 10px; */
+    /* right: 10px; */
+	height: 10px;
+	position: relative;
+	animation-duration: 7s;
+}
+.background-masker.sub-percent{
+    top: 5px; 
+    left: 30%; 
+    /* right: 50px;  */
+	height: 10px; 
+	width: 40%;
+	position: relative;
+	animation-duration: 10s;
+}

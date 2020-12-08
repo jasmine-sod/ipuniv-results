@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^myipuresult\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.myipuresult\.com$
+RewriteRule ^api/(.*)$ http\:\/\/www\.myipuresult\.com\/api\.php\/$1
